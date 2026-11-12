@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A brief description of your web page for SEO.">
+    <title>My Webpage</title>
+    
+    <style>
+        /* Basic Global Resets and Styling */
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f4f4f9;
+            padding: 20px;
+        }
+
+        header {
+            background-color: #2c3e50;
+            color: #ffffff;
+            padding: 1rem 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-radius: 8px;
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+            gap: 1.5rem;
+        }
+
+        nav a {
+            color: #ffffff;
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        main {
+            max-width: 800px;
+            margin: 2rem auto;
+            background: #ffffff;
+            padding: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        h1, h2 {
+            margin-bottom: 1rem;
+            color: #2c3e50;
+        }
+
+        p {
+            margin-bottom: 1rem;
+        }
+
+        button {
+            background-color: #3498db;
+            color: white;
+            border: none;
+            padding: 0.6rem 1.2rem;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 1rem;
+        }
+
+        button:hover {
+            background-color: #2980b9;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 2rem;
+            font-size: 0.9rem;
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="logo">MyWebsite</div>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home">
+            <h1>Welcome to My Website</h1>
+            <p>This is a standard HTML5 template to help you get started building web pages quickly.</p>
+            <button id="alertBtn">Click Me</button>
+        </section>
+
+        <section id="about" style="margin-top: 2rem;">
+            <h2>About Us</h2>
+            <p>Add your content, images, and features here.</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 MyWebsite. All rights reserved.</p>
+    </footer>
+
+    <script>
+        // Interactivity
+        document.getElementById('alertBtn').addEventListener('click', () => {
+            alert('Hello! Your script is connected properly.');
+        });
+    </script>
+</body>
+</html>
