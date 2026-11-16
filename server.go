@@ -79,7 +79,7 @@ func handleConn(conn net.Conn, release func()) {
 
 	// Check if path is for broker
 	if brokerPaths[req.URL.Path] {
-		// handleBroker(conn, req, release)
+		handleBroker(conn, req, release)
 		return
 	}
 

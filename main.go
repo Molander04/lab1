@@ -4,6 +4,7 @@ import (
 	"fmt"
 	"net"
 	"os"
+	"sync"
 )
 
 func main() {
@@ -38,8 +39,8 @@ func main() {
 
 		go func(conn net.Conn) {
 
-			defer conn.Close()
-			release := func() { <-sem }
+			var once sync.Once
+			release := func() { once.Do(func() { <-sem }) }
 
 			handleConn(conn, release)
 
